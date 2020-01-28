@@ -1,0 +1,23 @@
+{
+  "name": "grommet_regression",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@wdio/cli": "^5.18.6",
+    "@wdio/firefox-profile-service": "^5.16.11",
+    "@wdio/local-runner": "^5.18.6",
+    "@wdio/mocha-framework": "^5.18.6",
+    "@wdio/spec-reporter": "^5.18.6",
+    "@wdio/sync": "^5.18.6",
+    "chromedriver": "^79.0.0",
+    "wdio-chromedriver-service": "^5.0.2"
+  }
+}
