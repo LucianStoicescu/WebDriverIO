@@ -56,6 +56,9 @@ exports.config = {
         // 5 instances get started at a time.
         //
         browserName: 'chrome',
+        'goog:chromeOptions':{
+          args:['--start-fullscreen']
+        },
         // 'goog:chromeOptions':{
         //   args:['--headless','--start-maximized','--disable-gpu']
         // },

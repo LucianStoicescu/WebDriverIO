@@ -4,7 +4,7 @@ describe('The Grommet main page', ()=>{
   it('Should Have a Title',()=> {
    browser.url('https://dev.thegrommet.com')
    const title = browser.getTitle()
-   assert(title.includes('The Grommit'),"Actual title displayed was: "+title)
+   assert(title.includes('The Grommet'),"Actual title displayed was: "+title)
  });
   it('Should go to a product page', ()=> {
     const disc = $('//div[@class="tile-container-3 tile-container-2-mobile"]/a[2]')
