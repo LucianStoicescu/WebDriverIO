@@ -3,6 +3,7 @@ describe('The Grommet main page', ()=>{
 
   it('Should Have a Title',()=> {
    browser.url('https://dev.thegrommet.com')
+   browser.maximizeWindow()
    const title = browser.getTitle()
    assert(title.includes('The Grommet'),"Actual title displayed was: "+title)
  });

@@ -11,7 +11,7 @@ exports.config = {
     // Override default path ('/wd/hub') for chromedriver service.
     path: '/',
     //Default is 4444
-    //port: 4445,
+    port: 4445,
     //
     // ==================
     // Specify Test Files
@@ -55,10 +55,10 @@ exports.config = {
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         //
-        browserName: 'chrome',
-        'goog:chromeOptions':{
-          args:['--start-fullscreen']
-        },
+        // browserName: 'chrome',
+        // 'goog:chromeOptions':{
+        //   args:['--start-fullscreen']
+        // },
         // 'goog:chromeOptions':{
         //   args:['--headless','--start-maximized','--disable-gpu']
         // },
@@ -66,10 +66,12 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    },
-    // {
-    //   browserName: 'safari',
-    // }
+
+        browserName: 'safari',
+        'webkit:safariOptions':{
+        technologyPreview: true
+        }
+    }
   ],
     //
     // ===================
